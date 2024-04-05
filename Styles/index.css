@@ -22,7 +22,7 @@ body {
 }
 
 p {color: #EFEDE7;
-  font-family: 'Cormorant Garamond';
+  font-family: 'Cormorant Garamond','Times New Roman', sans-serif;
   font-size: 1.5rem;
   line-height: 1.4;
 }
@@ -43,7 +43,7 @@ h1 {
 
 /* Nav Styling */
 nav, footer { /* Multiple Selector */
-  font-family: 'Cormorant Garamond', Arial, sans-serif; 
+  font-family: 'Cormorant Garamond','Times New Roman', sans-serif;
   overflow: hidden;
   width: 100%;
 }

@@ -34,7 +34,7 @@ p {color: #EFEDE7;
 
   
 h1 {
-  font-family:'Higuen Serif';
+  font-family:'Higuen Serif','Times New Roman';
   color: var(--second-color);
   font-size: 4.375rem;
   font-weight: lighter;

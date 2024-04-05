@@ -1,0 +1,406 @@
+/* General Styling */
+@font-face {
+  font-family: 'Cormorant Garamond'; 
+  src: url('../Fonts/higuenSerif.otf');
+  font-family: 'Higuen Serif'; 
+  src: url('../Fonts/higuenSerif.otf');
+}
+
+/* Color Scheme */
+:root {
+  --main-color: #354433; /* Default primary color */
+  --second-color: #CBD07C;
+} 
+
+*{
+  font-family: 'Cormorant Garamond'; /* Univeral Selector */
+}
+
+body {
+  background-color: var(--main-color);
+  margin: 0;
+}
+
+p, th, td, li, label, legend{
+  color: #EFEDE7;
+  font-family: 'Cormorant Garamond';
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+
+h1 {
+  font-family:'Higuen Serif';
+  color: var(--second-color);
+  font-size: 4.375rem;
+  font-weight: lighter;
+}
+
+/* Nav Styling */
+nav, footer {
+  font-family: 'Cormorant Garamond', Arial, sans-serif; 
+  overflow: hidden;
+  width: 100%;
+}
+nav ul li a:link, nav ul li a:visited {
+  color:#EFEDE7;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+  color: grey;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+nav ul li {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  float: center;
+}
+nav ul li a {
+  display: flex;
+  color: white;
+  text-align: center;
+  padding: 16px 60px;
+  text-decoration: none;
+}
+
+cite{color: #EFEDE7;
+  font-size: 0.9rem;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+li a:hover {
+  color: grey;
+}
+.inspirationText2 > ul{ /* Child Selector */
+  color:#EFEDE7;
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* Image Styling and Sizing  */
+#mainImageBanner {
+  width: 100%;
+  height: auto;
+}
+
+img[src*="../Pictures/me.png"]{
+  max-width: 60%;
+  height: auto;
+  border-radius: 20px;
+  margin: 20% 0 0 0;
+}
+
+.button-container {
+	display: flex;
+	margin-top: 30px;
+	justify-content: center;
+}
+
+/* Form Styling */
+#submit-button {
+	width: 50%;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+	background-color: var(--second-color);
+	color: #242424;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+#submit-button:hover {
+	background-color: #242424;
+	color: #ffffff;
+}
+#message-panel {
+	margin-top: 15px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 4px;
+  font-size: 1.5rem;
+}
+
+input {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: px;
+  width: 25%;
+  box-sizing: border-box; 
+}
+
+textarea{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+/* Table Styling */
+table {
+  width: 50%;
+  margin: auto;
+}
+
+th, td {
+  padding: 10px 80px;
+  text-align: center;
+  border: 1px solid #ddd;
+  color: rgb(255, 255, 255);
+}
+
+th {
+  background-color: #f2f2f2; 
+  color: rgb(0, 0, 0);
+}
+
+caption{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+
+
+/* Responsize Styling */
+/* Large Screens (Most laptops) */
+@media screen and (min-width: 1000px) { 
+  
+  #container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    grid-gap: 40px 30px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "sophie myPicture"
+    "inspiration inspirationText"
+    "inspirationText2 inspirationText2"
+    "skillsIntro skills"
+    "form-container formIntro";
+    width: 100%;
+    max-width: 80vw;
+  }
+
+  .myPicture{
+    grid-area: myPicture;
+    text-align: center;
+    margin: 0 10%;
+    float: right;
+  }
+
+  .sophie{
+    grid-area: sophie;
+  }
+
+  .inspiration{
+    grid-area: inspiration;
+
+  }
+
+  .inspirationText{
+    grid-area: inspirationText;
+    margin: 0 10%;
+    margin: 0 100px 20px 0;
+  }
+
+  .inspirationText2{
+    margin-top: -50px;
+    grid-area: inspirationText2;
+  }
+
+  .skillsIntro{
+    grid-area: skillsIntro;
+    margin-right: auto;
+  }
+
+  .skills{
+    grid-area: skills;
+  }
+
+  .formIntro{
+    grid-area: formIntro;
+  }
+
+  .form-container{
+    grid-area: form-container;
+  }
+  
+  iframe{
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+  }
+
+  /* #contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80vw;
+  } */
+
+  #topicOfInterest{
+    color: #000000;
+    font-family: 'Cormorant Garamond';
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  #legend {
+    color:var(--second-color);
+  }
+
+  
+  
+} 
+
+/* Medium Screens (Some laptops, and most tablets and phones) */
+@media screen and (max-width: 1000px) and (min-width: 900px){ 
+  
+  #container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0 10%;
+    grid-gap: 50px 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "myPicture"
+    "sophie"
+    "inspiration"
+    "inspirationText"
+    "skillsIntro"
+    "skills";
+    width: 100%;
+    max-width: fit-content;
+  }
+  .myPicture{
+    grid-area: myPicture;
+    text-align: center;
+    margin: 0 10%
+  }
+  
+  .sophie{
+    grid-area: sophie;
+  }
+
+  .inspiration{
+    grid-area: inspiration;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inspirationText{
+    grid-area: inspirationText;
+  }
+
+  .skillsIntro{
+    grid-area: skillsIntro;
+  }
+
+  .skills{
+    grid-area: skills;
+  }
+
+  iframe{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+    float: right;
+  }
+
+  nav ul li a {
+    padding: 16px 20px;
+  }
+    
+} 
+
+/* Small Screens (Mainly phones) */
+@media screen and (max-width: 900px) and (min-width: 100px){ 
+  
+  #container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+    grid-gap: 50px 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+    "myPicture"
+    "sophie"
+    "inspiration"
+    "inspirationText"
+    "skillsIntro"
+    "skills";
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  .myPicture{
+    grid-area: myPicture;
+    text-align: center;
+    margin: 0 10%
+  }
+  
+  .sophie{
+    grid-area: sophie;
+  }
+
+  .inspiration{
+    grid-area: inspiration;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inspirationText{
+    grid-area: inspirationText;
+  }
+
+  .skillsIntro{
+    grid-area: skillsIntro;
+  }
+
+  .skills{
+    grid-area: skills;
+  }
+
+  iframe{
+    width: 500px;
+    height: 250px;
+    border-radius: 20px;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    display: block;
+  }
+
+  nav ul li a {
+    display: block;
+  }
+ 
+} 

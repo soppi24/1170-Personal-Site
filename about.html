@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophie's Site</title>
+  <link rel="icon" href="../Pictures/bearFavicon.png" />
+  <link rel="stylesheet" href="../Styles/about.css" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="game.html">Space Intakers</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img id="mainImageBanner" src="../Pictures/bearBannerGreen.png" alt="bear banner picture" width=1250 height=320>
+    <hr>
+    <div id="container">
+
+      <div class="myPicture">
+        <img src="../Pictures/me.png" alt="profile photo" width=auto height=auto>
+      </div>
+
+      <div class="sophie">
+        <h1>Meeting Sophie Eruokwu</h1>
+        <p> Hello there! My name is Sophie Eruokwu, and this site showcases some of
+          my work. I mainly focus on the realm of design, but my goal is to be a game
+          designer and bring my character and concept designs to life in terms of games. I’ve
+          been drawing since I was about 7 or so, and I've been constantly improving as I
+          grew up. I learned that I had a great interest in design, especially character
+          design and concept art. </p>
+      </div>
+
+      <div class="inspiration">
+        <iframe controls src="https://www.youtube.com/embed/KMJbhee4xTk"
+          title="Architectural Designer Creates a Pixel Art Town" frameborder="0" allow="accelerometer; 
+          autoplay; clipboard-write; encrypted-media; gyroscope; 
+          picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+        <cite>Architectural Designer Creates a Pixel Art Town. Retrieved
+          February 9, 2024 from https://www.youtube.com/watch?v=KMJbhee4xTk</cite>
+      </div>
+      <br>
+
+      <div class="inspirationText">
+        <p>I have dabbled in other areas of art such as photography,
+          clay creations, embroidery, writing and much more. Additionally, I’m the author of
+          two children's books, that I also illustrated. In terms of my art, I tend to do
+          traditional, old-fashioned paper and pencil art, and sometimes watercolour (my best
+          medium) but I also use digital art sometimes as it's more convenient and easier to
+          edit and share.</p>
+      </div>
+
+      <div class="inspirationText2">
+        <p>The video beside was one of my biggest inpirations to
+          get into game development. I had intally wanted to get into architecture and
+          design, but I relised I could combine by ability to design, with my abilty
+          to tell stories, and create games as an output (not just books). Below are
+          some links to help you get in contact with me, or see more of what I do.</p>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/sophie-e-b66a1a228/">LinkedIn</a></li>
+          <li><a href="https://www.sophieeruokwu.com/">Book Website</a></li>
+        </ul>
+      </div>
+
+      <div class="skillsIntro">
+        <h1>My Skill Set</h1>
+        <p>Here are some of my skill sets in terms of computer programs. Granted,
+          I am not an expert in all, but I do take pride in my constant drive to
+          not only diversify the tools I use but also strive to get better at
+          said tools.</p>
+      </div>
+      <div class="skills">
+        <table>
+          <caption>My Skills and Abilites</caption>
+          <thead>
+            <tr>
+              <th>Programs</th>
+              <th>Skill Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Java</td>
+              <td>8/10</td>
+            </tr>
+
+            <tr>
+              <td>Python</td>
+              <td>3/10</td>
+            </tr>
+
+            <tr>
+              <td>Blender</td>
+              <td>2/10</td>
+            </tr>
+
+            <tr>
+              <td>HTML</td>
+              <td>9/10</td>
+            </tr>
+
+            <tr>
+              <td>CSS</td>
+              <td>7/10</td>
+            </tr>
+
+            <tr>
+              <td>Godot</td>
+              <td>2/10</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <div class="formIntro">
+        <h1>Contact Me</h1>
+        <p>Wanna get in contact? Just fill out the form on the left to get started!</p>
+      </div>
+
+      <div class="form-container">
+        <form id="contact-form" action="#">
+
+          <fieldset>
+            <legend id="legend">Fill out the form below</legend>
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" /><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" /> <br><br>
+            
+            <label for="phone">Phone Number (No dashes please):</label>
+            <input type="tel" id="phone" name="phone" /><br><br>
+
+            <p>Please select your affiliation:</p>
+            <input type="radio" id="option1" name="affiliation" value="Corperate">
+            <label for="option1">Corperate</label><br><br>
+            <input type="radio" id="option2" name="affiliation" value="Individual">
+            <label for="option2">Individual</label><br><br>
+            <input type="radio" id="option3" name="affiliation" value="Other">
+            <label for="option3">Other</label><br><br>
+        
+            <label for="topicOfInterest">Select a topic of interest</label>
+            <select name="topicOfInterest" id="topicOfInterest">
+              <option value=" ">Select</option>
+              <option value="gameDesign">Game Design</option>
+              <option value="conceptArt">Concept Art</option>
+              <option value="gameNarrativeDesign">Game Narrative Design</option>
+            </select><br><br>
+
+            <label for="boxMessage">Message</label>
+            <textarea id="boxMessage" name="message" rows="4" col="100"
+              placeholder="Enter your text here..."></textarea>
+
+            <div class="button-container">
+              <input id="submit-button" type="submit" value="Submit" />
+            </div>
+
+            <div id="message-panel"></div>
+          </fieldset>
+
+        </form>
+      </div>
+    </div>
+
+    </div>
+  </main>
+  <hr>
+
+  <footer>
+    <img src="../Pictures/bearFavicon.png" alt="Small PNG Image" width=100 height=auto>
+    <p id="copyright-statement"> &copy; 2024 Sophie's Website. All rights reserved. </p>
+  </footer>
+  <script src="../JavaScript/about.js"></script>
+  <script src="../JavaScript/colorPalette.js"></script>
+</body>
+<html>

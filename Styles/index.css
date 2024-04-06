@@ -6,7 +6,6 @@
   src: url('../Fonts/higuenSerif.otf');
 }
 
-
 /* Color Scheme */
 :root {
   --main-color: #354433; /* Default primary color */
@@ -44,7 +43,7 @@ h1 {
 
 /* Nav Styling */
 nav, footer { /* Multiple Selector */
-  font-family: 'Cormorant Garamond','Times New Roman', sans-serif;
+  font-family: 'Cormorant Garamond','Times New Roman', sans-serif; 
   overflow: hidden;
   width: 100%;
 }

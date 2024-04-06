@@ -31,7 +31,7 @@ p, cite{color: #EFEDE7;
 h1 {
   font-family:'Higuen Serif';
   color: var(--second-color);
-  font-size: 4.375rem;
+  font-size: 3.375rem;
   font-weight: lighter;
   text-align: center;
 }
@@ -246,7 +246,7 @@ video[src*="../Videos/gameplay.mp4"]{
 } 
 
 /* Small Screens (Mainly phones) */
-@media screen and (max-width: 600px) and (min-width: 100px){ 
+@media screen and (max-width: 600px) and (min-width: 500px){ 
   #container{
     display: grid;
     justify-content: center;
@@ -297,6 +297,70 @@ video[src*="../Videos/gameplay.mp4"]{
   }
   video{
     width: 500px;
+    height: auto;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    display: block;
+  }
+  nav ul li a {
+    display: block;
+
+  }
+
+} 
+
+/* Small Screens (Mainly phones) */
+@media screen and (max-width: 500px) and (min-width: 100px){ 
+  #container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+    grid-gap: 20px 0 ;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto auto auto  ;
+    grid-template-areas: 
+    "header"
+    "video"
+    "image"
+    "explanation";
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  .headerContent{
+    grid-area: header;
+    margin: 0 5%; 
+  }
+
+  .video{
+    grid-area: video;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    object-fit: cover; 
+  }
+    
+  .image{
+    grid-area: image;
+    text-align: center;
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .explanation{
+    grid-area: explanation;
+    margin: 0 5%; 
+  }
+  video{
+    width: 100%;
     height: auto;
   }
 

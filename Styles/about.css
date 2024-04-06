@@ -25,7 +25,7 @@ p, th, td, li, label, legend{
   color: #EFEDE7;
   font-family: 'Cormorant Garamond';
   font-size: 1.5rem;
-  line-height: 1.4;
+  /* line-height: 1.4; */
 }
 
 
@@ -152,23 +152,35 @@ textarea{
   box-sizing: border-box; 
 }
 
+#topicOfInterest{
+  color: #000000;
+  font-family: 'Cormorant Garamond';
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+#legend {
+  color:var(--second-color);
+}
+
+
 /* Table Styling */
 table {
   width: 50%;
   margin: auto;
 }
 
-th, td {
+ th, td {
   padding: 10px 80px;
   text-align: center;
   border: 1px solid #ddd;
   color: rgb(255, 255, 255);
-}
+} 
 
-th {
+ th {
   background-color: #f2f2f2; 
   color: rgb(0, 0, 0);
-}
+} 
 
 caption{
   color: rgb(255, 255, 255);
@@ -176,6 +188,7 @@ caption{
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
+
 
 
 
@@ -251,26 +264,7 @@ caption{
     border-radius: 20px;
   }
 
-  /* #contact-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 80vw;
-  } */
 
-  #topicOfInterest{
-    color: #000000;
-    font-family: 'Cormorant Garamond';
-    font-size: 1.5rem;
-    line-height: 1.4;
-  }
-
-  #legend {
-    color:var(--second-color);
-  }
 
   
   
@@ -339,7 +333,7 @@ caption{
 } 
 
 /* Small Screens (Mainly phones) */
-@media screen and (max-width: 900px) and (min-width: 100px){ 
+@media screen and (max-width: 900px) and (min-width: 500px){ 
   
   #container{
     display: grid;
@@ -404,3 +398,100 @@ caption{
   }
  
 } 
+
+/* Small Screens (Mainly phones) */
+@media screen and (max-width: 500px) and (min-width: 100px){ 
+  
+  #container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5%;
+    grid-gap: 50px 10px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: 
+    "myPicture"
+    "sophie"
+    "inspiration"
+    "inspirationText"
+    "inspirationText2"
+    "skillsIntro"
+    "skills"
+    "formIntro"
+    "form-container";
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  .myPicture{
+    grid-area: myPicture;
+    text-align: center;
+    margin: 0 5%
+  }
+  
+  .sophie{
+    grid-area: sophie;
+    margin: 0 5%
+  }
+
+  .inspiration{
+    grid-area: inspiration;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%
+  }
+
+  .inspirationText{
+    grid-area: inspirationText;
+    margin: 0 5%
+  }
+
+  .inspirationText2{
+    grid-area: inspirationText2;
+    margin: 0 5%
+  }
+
+  .skillsIntro{
+    grid-area: skillsIntro;
+    margin: 0 5%
+  }
+
+  .skills{
+    grid-area: skills;
+  }
+
+  th, td {
+    padding: 5px 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    color: rgb(255, 255, 255);
+  } 
+
+  .formIntro{
+    grid-area: formIntro;
+    margin: 0 5%
+  }
+
+  .form-container{
+    grid-area: form-container;
+    margin: 0 5%
+  }
+
+  iframe{
+    width: 80%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  nav ul {
+    flex-wrap: wrap;
+    display: block;
+  }
+
+  nav ul li a {
+    display: block;
+  }
+ 
+} 
+

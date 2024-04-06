@@ -1,7 +1,7 @@
 /* General Styling */
 @font-face {
   font-family: 'Cormorant Garamond'; 
-  src: url('../Fonts/cormorantGaramond.ttf');
+  src: url('../Fonts/cormorantGaramond.otf');
   font-family: 'Higuen Serif'; 
   src: url('../Fonts/higuenSerif.otf');
 }

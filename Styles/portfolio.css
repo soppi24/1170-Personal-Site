@@ -6,6 +6,7 @@
   src: url('../Fonts/higuenSerif.otf');
 }
 
+
 /* Color Scheme */
 :root {
   --main-color: #354433; /* Default primary color */
@@ -105,52 +106,6 @@ footer{
   width: 100%;
   height: auto;
 }
-
-/* img[src*="../Pictures/ben.png"]{
-  max-width: 40%;
-  height: auto;
-  border-radius: 20px;
-  margin: 20px;
-  border: 2px solid #CBD07C;
-  margin:10px;
-  padding: 10px;
-}
-
-img[src*="../Pictures/charlotte.PNG"]{
-  max-width: 40%;
-  height: auto;
-  border-radius: 20px;
-  border: 2px solid #CBD07C;
-  margin:10px;
-  padding: 10px;
-}
-
-img[src*="../Pictures/historia.png"]{
-  max-width: 40%;
-  height: auto;
-  border-radius: 20px;
-  border: 2px solid #CBD07C;
-  margin:10px;
-  padding: 10px;
-}
-
-img[src*="../Pictures/quinn.png"]{
-  max-width: 40%;
-  height: auto;
-  border-radius: 20px;
-  border: 2px solid #CBD07C;
-  margin:10px;
-  padding: 10px;
-}
-
-img[src*="../Pictures/bobble.png"]{
-  max-width: 40%;
-  height: auto;
-  border-radius: 20px;
-  border: 2px solid #CBD07C;
-  margin:10px;
-  padding: 10px;
-} */
 
 #contentBox img {
   max-width: 40%;
